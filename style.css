@@ -9,8 +9,12 @@
 }
 .buttons{
     position: relative;
+    margin: 2rem;
 }
 .button1{
+    position: absolute;
+    top: 50%;
+    left: 25%;
     width: 10rem;
     margin: 1rem;
     background: none;
@@ -26,4 +30,24 @@
     width: 15rem;
     background: #6495ed ;
     color: #fff;
+}
+.button2{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    margin-top: 40px;
+    width: 6rem;
+    background: #6495ed;
+    height: 6rem;
+    border-radius: 50%;
+    border: 3px solid #6495ed;
+    transition: all 0.8s ;
+    color:#fff;
+    box-shadow: 0.1rem 0.5rem 1rem #6495ed33;
+    transform: translate(-25%, -50%);
+}
+.button2:hover{
+    background: #6495ed;
+    transform: rotate(35deg) scale(2) translateX(-45%) translateY(50%);
+    border-radius: 5%;
 }
