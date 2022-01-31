@@ -18,7 +18,7 @@
     width: 10rem;
     margin: 1rem;
     background: none;
-    border-radius: 10px;
+    border-radius: 1rem;
     border: 3px solid #6495ed;
     transition: all 1s ease-in-out;
     color: #6495ed;
@@ -35,7 +35,7 @@
     position: absolute;
     top: 50%;
     left: 75%;
-    margin-top: 40px;
+    margin-top: 2rem;
     width: 6rem;
     background: #6495ed;
     height: 6rem;
@@ -49,5 +49,38 @@
 .button2:hover{
     background: #6495ed;
     transform: rotate(35deg) scale(2) translateX(-45%) translateY(50%);
-    border-radius: 5%;
+    border-radius: 1%;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    margin-top: 10rem;
+}
+.image{
+    animation: imageHeight 3s ease-in-out infinite forwards 1s;
+    width: auto;
+    height: auto;
+}
+@keyframes imageHeight{
+    0%{
+        opacity: 0;
+        transform: translate(450px, 130px);
+        border-radius: 0%;
+    }
+    25%{
+        opacity: 0.7;
+        transform: scale(1.5) translate(-300px, 0px);
+        border-radius: 0%;
+    }
+    50%{
+        opacity: 1;
+        transform: translate(0, 0);
+        border-radius: 0%;
+    }
+    100%{
+        transform: scale(1.5);
+        border-radius: 50rem;
+    }
 }
